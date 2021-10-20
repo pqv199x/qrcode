@@ -1,17 +1,15 @@
 <template>
   <div class="page-layout">
-    <div class="navbar"></div>
-    <div class="main-content">
-        <router-view/>
-    </div>
+    <Home />
   </div>
 </template>
 
 <script>
-
+import Home from './components/Home.vue'
 export default {
   name: 'App',
   components: {
+    Home
   }
 }
 </script>
