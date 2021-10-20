@@ -18,6 +18,9 @@
 import VueQrcode from '@chenfengyuan/vue-qrcode'
 export default {
   name: 'HelloWorld',
+  metaInfo: {
+    title: 'QR Code'
+  },
   props: {
     msg: String
   },
@@ -28,6 +31,9 @@ export default {
     return {
       text: 'Sample'
     }
+  },
+  created () {
+    document.title = 'QR Code'
   }
 }
 </script>
